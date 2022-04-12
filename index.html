@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sing-Up Form</title>
+</head>
+<body>
+
+    <div class="bannerimg">
+        <img src="imgs/banner.jpeg" alt="banner">
+        <div class="logocontainer">
+            <img src="imgs/avatarCris.png" alt="avatar" class="logo">
+        </div>
+    </div>
+    
+    <div class="right">
+        
+        <div class="introtext">
+            <h2>This is not a real online service! You know you need something like this in your real life to help you realize your deepest dreams.</h2>
+            <h2>Sign up <em>now</em> to get started.</h2>
+            <h2>You know <em>you</em> want to.</h2>
+        </div>
+
+        <div class="container">
+            <div class="form">
+                <form action="signup.php" method="post">
+                    <h1>Let's do this!</h1>
+                    <fieldset>
+                        <div class="inputline">
+                            <label for="firstName">FIRST NAME:</label>
+                            <input type="text" name="firstname" required>
+                        </div>
+                        <div class="inputline">
+                        <label for="firstName">LAST NAME:</label>
+                        <input type="text" name="lastname">
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="inputline">
+                            <label for="firstName">EMAIL:</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div class="inputline">
+                            <label for="firstName">PHONE NUMBER:</label>
+                            <input type="email" name="tel">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="inputline">
+                            <label for="firstName">PASSWORD:</label>
+                            <input class="error" type="password" name="password" title="Passwords must match">
+                            <p>*Passwords do not match</p>
+                        </div>
+                        <div class="inputline">
+                            <label for="firstName">CONFIRM PASSWORD:</label>
+                            <input class="error" type="password" name="confirm_password">
+                        </div>
+                    </fieldset>
+                    <div class="login">
+                        <button type="submit" name="submit" value="Sign-Up">Create Account</button>
+                        <p>Already have an account? <a href="login.php">Login Here</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
+</html>
